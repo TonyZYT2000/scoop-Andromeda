@@ -1,0 +1,58 @@
+{
+    "version": "13.0.4",
+    "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
+    "homepage": "https://codelite.org/",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://github.com/eranif/codelite/blob/master/LICENSE"
+    },
+    "notes": [
+        "This is the weekly build distribution of CodeLite."
+    ],
+    "suggest": {
+        "gcc" : "gcc"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64",
+            "hash": "sha1:4a4139fec410cf5af8cffcb878aeabf94e3458ac"
+        },
+        "32bit": {
+            "url": "https://downloads.codelite.org/downloads.php?windows_weekly",
+            "hash": "sha1:9c3f37c59b86848b47d2d6592915e2394f595281"
+        }
+    },
+    "pre_install": [
+        "mv codelite*.exe codelite-installer.exe"
+    ],
+    "installer": {
+        "file": "codelite-installer.exe"
+    },
+    "uninstaller": {
+        "file": "unins000.exe"
+    },
+    "persist": [
+        "config"
+    ],
+    "bin": "codelite.exe",
+    "shortcuts": [
+        [
+            "codelite.exe",
+            "codelite"
+        ]
+    ],
+    "checkver": {
+        "url": "https://downloads.codelite.org/",
+        "regex": "CodeLite ([\\d+\\.\\d+\\.\\d+]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64"
+            },
+            "32bit": {
+                "url": "https://downloads.codelite.org/downloads.php?windows_weekly"
+            }
+        }
+    }
+}
