@@ -7,11 +7,13 @@
         "url": "https://github.com/eranif/codelite/blob/master/LICENSE"
     },
     "notes": [
-        "This is the weekly build distribution of CodeLite."
+        "This is the weekly build distribution of CodeLite.",
+        "Reccomend to install gcc or llvm to compile C/C++ code."
     ],
+    "depends": "innounp",
     "suggest": {
         "gcc" : "gcc",
-        "innounp" : "innounp"
+        "llvm" : "llvm"
     },
     "architecture": {
         "64bit": {

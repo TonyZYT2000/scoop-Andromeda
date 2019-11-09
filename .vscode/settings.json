@@ -18,27 +18,5 @@
         "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json": [
             "bucket/*.yml",
         ],
-    },
-    "terminals.terminals": [
-        {
-            "name": "Powershell",
-            "shellPath": "powershell.exe",
-            "shellArgs": [
-                "-NoLogo",
-                "-NoExit",
-            ],
-            "focus": true,
-            "open": true,
-        },
-        {
-            "name": "Powershell Core",
-            "shellPath": "pwsh.exe",
-            "shellArgs": [
-                "-NoLogo",
-                "-NoExit",
-            ],
-            "focus": true,
-            "open": true,
-        },
-    ],
+    }
 }
