@@ -82,7 +82,7 @@
             "withOtherName",
             "", // Keep blank if none
             "withOtherIcon.ico"
-        ],
+        ]
     ],
     "shortcuts": [ // String or Array Of Array Of Strings (same as bin)
         [
