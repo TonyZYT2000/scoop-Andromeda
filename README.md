@@ -4,6 +4,10 @@
 
 - This is a bucket containing softwares I like.
 
+| Software | Discription              |
+| -------- | ------------------------ |
+| CodeLite | Fast and light C/C++ IDE |
+
 ## Installation
 
 `scoop bucket add Andromeda 'https://github.com/TonyZYT2000/scoop-Andromeda.git'`
