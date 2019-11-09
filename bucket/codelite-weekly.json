@@ -10,7 +10,8 @@
         "This is the weekly build distribution of CodeLite."
     ],
     "suggest": {
-        "gcc" : "gcc"
+        "gcc" : "gcc",
+        "innounp" : "innounp"
     },
     "architecture": {
         "64bit": {
