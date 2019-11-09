@@ -23,13 +23,17 @@
         }
     },
     "pre_install": [
-        "mv codelite*.exe codelite-installer.exe"
+        "mv $dir\\downloads.php $dir\\codelite-installer.exe"
     ],
     "installer": {
-        "file": "codelite-installer.exe"
-    },
-    "uninstaller": {
-        "file": "unins000.exe"
+        "script": [
+            "innounp -x -d\"$dir\" $dir\\codelite-installer.exe > $dir\\unpack.log",
+            "Get-ChildItem \"$dir\\{app}\" -Recurse |  Move-Item -Destination \"$dir\"",
+            "Remove-Item \"$dir\\{app}\"",
+            "Remove-Item $dir\\codelite-installer.exe",
+            "Remove-Item $dir\\install_script.iss",
+            "Remove-Item $dir\\unpack.log"
+        ]
     },
     "persist": [
         "config"
