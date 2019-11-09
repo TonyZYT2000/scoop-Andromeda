@@ -15,7 +15,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64",
-            "hash": "sha1:4a4139fec410cf5af8cffcb878aeabf94e3458ac"
+            "hash": "sha1:bb572ac163a044bb3b9ae2693e5eab88abc3b231"
         },
         "32bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly",
