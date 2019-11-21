@@ -1,5 +1,5 @@
 {
-    "version": "13.0.4",
+    "version": "13.0.5",
     "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
     "homepage": "https://codelite.org/",
     "license": {
@@ -18,11 +18,11 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64",
-            "hash": "sha1:bb572ac163a044bb3b9ae2693e5eab88abc3b231"
+            "hash": "sha1:a592bfae93c8e7a581869fcbfeb01d339cf4090d"
         },
         "32bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly",
-            "hash": "sha1:9c3f37c59b86848b47d2d6592915e2394f595281"
+            "hash": "sha1:b1635ae462fe320bfc8fb34ce33803fb13bed044"
         }
     },
     "pre_install": [
