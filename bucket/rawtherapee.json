@@ -1,0 +1,34 @@
+{
+    "version": "5.7",
+    "description": "RawTherapee is a free, cross-platform raw image processing program.",
+    "homepage": "https://rawtherapee.com/",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/Beep6581/RawTherapee/blob/dev/LICENSE.txt"
+    },
+    "notes": [
+        "RawTherapee is a powerful tool to process RAW images."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip",
+            "hash": "sha256:F6D78951A5A398E259637FF8C3DADD5209BF6BDE6694A3A3E168BA8BFD576316"
+        }
+    },
+    "extract_dir": "rawtherapee",
+    "post_install": [
+        "Remove-Item $dir\\RawTherapee_*_WinVista_64.exe"
+    ],
+    "bin": "rawtherapee.exe",
+    "shortcuts": [
+        [
+            "rawtherapee.exe",
+            "rawtherapee"
+        ]
+    ],
+    "checkver": {
+        "url": "https://rawtherapee.com/",
+        "regex": "version ([\\d+\\.\\d+]+)"
+    }
+}
+
