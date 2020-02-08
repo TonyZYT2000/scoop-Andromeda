@@ -1,0 +1,27 @@
+
+{
+    "version": "0.19.3",
+    "description": "Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.",
+    "homepage": "https://stellarium.org/",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://github.com/Stellarium/stellarium/blob/master/COPYING"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Stellarium/stellarium/releases/download/v0.19.3/stellarium-0.19.3.1-win64.exe",
+            "hash": "26A16B86AC0C6486327E3F932DA0C5D8DD0A44D06DAA370CDA98F362A19FA7EB"
+        },
+        "32bit": {
+            "url": "https://github.com/Stellarium/stellarium/releases/download/v0.19.3/stellarium-0.19.3.1-win32.exe",
+            "hash": "9692AB6498ADA9986D40982C39A6FB020907B1C5E1FA4026D404EB6176D07BDF"
+        }
+    },
+    "bin": "stellarium.exe",
+    "shortcuts": [
+        [
+            "stellarium.exe",
+            "stellarium"
+        ]
+    ]
+}
