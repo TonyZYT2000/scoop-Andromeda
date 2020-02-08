@@ -1,5 +1,5 @@
 {
-    "version": "13.0.5",
+    "version": "13.0.8",
     "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
     "homepage": "https://codelite.org/",
     "license": {
@@ -12,22 +12,20 @@
     ],
     "depends": "innounp",
     "suggest": {
-        "gcc" : "gcc",
-        "llvm" : "llvm"
+        "gcc": "gcc",
+        "llvm": "llvm"
     },
     "architecture": {
         "64bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64",
-            "hash": "sha1:a592bfae93c8e7a581869fcbfeb01d339cf4090d"
+            "hash": "e9b4907e643611e2dbdb1b2de6edf2b42b39de6fd6158416225b79a5cafaf026"
         },
         "32bit": {
             "url": "https://downloads.codelite.org/downloads.php?windows_weekly",
-            "hash": "sha1:b1635ae462fe320bfc8fb34ce33803fb13bed044"
+            "hash": "f24cbb9638b3cc81d34bc6966310647d0772db38e3c259a25569dea62f3a4ab0"
         }
     },
-    "pre_install": [
-        "mv $dir\\downloads.php $dir\\codelite-installer.exe"
-    ],
+    "pre_install": "Rename-Item -Path $dir\\downloads.php -NewName $dir\\codelite-installer.exe",
     "installer": {
         "script": [
             "innounp -x -d\"$dir\" $dir\\codelite-installer.exe > $dir\\unpack.log",
@@ -38,9 +36,7 @@
             "Remove-Item $dir\\unpack.log"
         ]
     },
-    "persist": [
-        "config"
-    ],
+    "persist": "config",
     "bin": "codelite.exe",
     "shortcuts": [
         [
