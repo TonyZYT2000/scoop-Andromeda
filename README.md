@@ -7,7 +7,6 @@
 | Software    | Discription                        |
 | ----------- | ---------------------------------- |
 | CodeLite    | Fast and light C/C++ IDE           |
-| RawTherapee | Powerful RAW image processing tool |
 
 ## Installation
 
