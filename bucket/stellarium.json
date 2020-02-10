@@ -7,6 +7,7 @@
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/Stellarium/stellarium/blob/master/COPYING"
     },
+    "depends": "innounp",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Stellarium/stellarium/releases/download/v0.19.3/stellarium-0.19.3.1-win64.exe",
@@ -17,7 +18,7 @@
             "hash": "9692AB6498ADA9986D40982C39A6FB020907B1C5E1FA4026D404EB6176D07BDF"
         }
     },
-    "pre_install": "$arch = $architecture.SubString(0, 2); Rename-Item -Path \"$dir\\${app}-${version}-win${arch}.exe\" -NewName \"$dir\\stellarium-installer.exe\"",
+    "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\stellarium-installer.exe\"",
     "installer": {
         "script": [
             "innounp -x -d\"$dir\" $dir\\stellarium-installer.exe > $dir\\unpack.log",
@@ -34,5 +35,18 @@
             "stellarium.exe",
             "stellarium"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Stellarium/stellarium"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Stellarium/stellarium/releases/download/v$version/stellarium-$version.1-win64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/Stellarium/stellarium/releases/download/v$version/stellarium-$version.1-win32.exe"
+            }
+        }
+    }
 }
