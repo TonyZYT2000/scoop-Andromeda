@@ -4,9 +4,10 @@
 
 - This is a bucket containing softwares I like.
 
-| Software    | Discription                        |
-| ----------- | ---------------------------------- |
-| CodeLite    | Fast and light C/C++ IDE           |
+| Software    | Discription                           |
+| ----------- | ------------------------------------- |
+| CodeLite    | Fast and light C/C++ IDE.             |
+| Stellarium  | Powerful and Beautiful Sky simulator. |
 
 ## Installation
 
