@@ -17,6 +17,17 @@
             "hash": "9692AB6498ADA9986D40982C39A6FB020907B1C5E1FA4026D404EB6176D07BDF"
         }
     },
+    "pre_install": "$arch = $architecture.SubString(0, 2); Rename-Item -Path \"$dir\\${app}-${version}-win${arch}.exe\" -NewName \"$dir\\stellarium-installer.exe\"",
+    "installer": {
+        "script": [
+            "innounp -x -d\"$dir\" $dir\\stellarium-installer.exe > $dir\\unpack.log",
+            "Get-ChildItem \"$dir\\{app}\" -Recurse |  Move-Item -Destination \"$dir\"",
+            "Remove-Item \"$dir\\{app}\"",
+            "Remove-Item $dir\\stellarium-installer.exe",
+            "Remove-Item $dir\\install_script.iss",
+            "Remove-Item $dir\\unpack.log"
+        ]
+    },
     "bin": "stellarium.exe",
     "shortcuts": [
         [
