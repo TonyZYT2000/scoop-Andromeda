@@ -33,7 +33,7 @@
     "shortcuts": [
         [
             "stellarium.exe",
-            "stellarium"
+            "Stellarium"
         ]
     ],
     "checkver": {

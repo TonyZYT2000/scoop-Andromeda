@@ -41,7 +41,7 @@
     "shortcuts": [
         [
             "codelite.exe",
-            "codelite"
+            "CodeLite"
         ]
     ],
     "checkver": {
