@@ -1,0 +1,54 @@
+{
+    "version": "4.2.3",
+    "description": "DeepSkyStacker is a freeware for astrophotographers that simplifies all the pre-processing steps of deep sky pictures.",
+    "homepage": "http://deepskystacker.free.fr/english/index.html",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://github.com/deepskystacker/DSS/blob/master/LICENSE"
+    },
+    "depends": "innounp",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.3-Release/DSS-4.2.3-Setup64.exe",
+            "hash": "FBECEDA79A599DE79FE461B7B586A8D619B8769748B2A402208374ED817C4B76"
+        },
+        "32bit": {
+            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.3-Release/DSS-4.2.3-Setup32.exe",
+            "hash": "FE4C63DCCE35633D007538E999983A6C208E65EA1D194887D5CD72FC3947F159"
+        }
+    },
+    "pre_install":"",
+    "installer": {
+        "script": [
+            "innounp -x -d\"$dir\" $dir\\codelite-installer.exe > $dir\\unpack.log",
+            "Get-ChildItem \"$dir\\{app}\" -Recurse |  Move-Item -Destination \"$dir\"",
+            "Remove-Item \"$dir\\{app}\"",
+            "Remove-Item $dir\\codelite-installer.exe",
+            "Remove-Item $dir\\install_script.iss",
+            "Remove-Item $dir\\unpack.log"
+        ]
+    },
+    "persist": "",
+    "bin": "",
+    "shortcuts": [
+        [
+            "",
+            ""
+        ]
+    ],
+    "checkver": {
+        "url": "",
+        "regex": ""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": ""
+            },
+            "32bit": {
+                "url": ""
+            }
+        }
+    }
+}
+
