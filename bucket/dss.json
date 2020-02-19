@@ -17,36 +17,36 @@
             "hash": "FE4C63DCCE35633D007538E999983A6C208E65EA1D194887D5CD72FC3947F159"
         }
     },
-    "pre_install":"",
+    "pre_install":"Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\dss-installer.exe\"",
     "installer": {
         "script": [
-            "innounp -x -d\"$dir\" $dir\\codelite-installer.exe > $dir\\unpack.log",
+            "innounp -x -d\"$dir\" $dir\\dss-installer.exe > $dir\\unpack.log",
             "Get-ChildItem \"$dir\\{app}\" -Recurse |  Move-Item -Destination \"$dir\"",
             "Remove-Item \"$dir\\{app}\"",
-            "Remove-Item $dir\\codelite-installer.exe",
+            "Remove-Item $dir\\dss-installer.exe",
             "Remove-Item $dir\\install_script.iss",
             "Remove-Item $dir\\unpack.log"
         ]
     },
     "persist": "",
-    "bin": "",
+    "bin": "DeepSkyStacker.exe",
     "shortcuts": [
         [
-            "",
-            ""
+            "DeepSkyStacker.exe",
+            "DeepSkyStacker"
         ]
     ],
     "checkver": {
-        "url": "",
-        "regex": ""
+        "url": "http://deepskystacker.free.fr/english/download.htm",
+        "regex": "DeepSkyStacker ([\\d+\\.\\d+\\.\\d+]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": ""
+                "url": "https://github.com/deepskystacker/DSS/releases/download/$version-Release/DSS-$version-Setup64.exe"
             },
             "32bit": {
-                "url": ""
+                "url": "https://github.com/deepskystacker/DSS/releases/download/$version-Release/DSS-$version-Setup32.exe"
             }
         }
     }
