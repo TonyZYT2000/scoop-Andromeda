@@ -8,6 +8,8 @@
 | ----------- | ------------------------------------- |
 | CodeLite    | Fast and light C/C++ IDE.             |
 | Stellarium  | Powerful and Beautiful Sky simulator. |
+| Siril       | Astrophotographing processing tool.   |
+| DSS         | Astrophotographing processing tool.   |
 
 ## Installation
 
