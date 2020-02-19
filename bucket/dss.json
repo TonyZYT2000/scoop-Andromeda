@@ -20,6 +20,7 @@
     "pre_install":"Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\dss-installer.exe\"",
     "installer": {
         "script": [
+            "Set-Location $dir",
             "7z e $dir\\dss-installer.exe > $dir\\unpack.log",
             "Remove-Item $dir\\dss-installer.exe",
             "Remove-Item $dir\\unpack.log"
