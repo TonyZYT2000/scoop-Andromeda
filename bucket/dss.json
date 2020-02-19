@@ -6,7 +6,7 @@
         "identifier": "BSD-3-Clause",
         "url": "https://github.com/deepskystacker/DSS/blob/master/LICENSE"
     },
-    "depends": "innounp",
+    "depends": "7zip",
     "architecture": {
         "64bit": {
             "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.3-Release/DSS-4.2.3-Setup64.exe",
@@ -20,11 +20,8 @@
     "pre_install":"Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\dss-installer.exe\"",
     "installer": {
         "script": [
-            "innounp -x -d\"$dir\" $dir\\dss-installer.exe > $dir\\unpack.log",
-            "Get-ChildItem \"$dir\\{app}\" -Recurse |  Move-Item -Destination \"$dir\"",
-            "Remove-Item \"$dir\\{app}\"",
+            "7z e $dir\\dss-installer.exe > $dir\\unpack.log",
             "Remove-Item $dir\\dss-installer.exe",
-            "Remove-Item $dir\\install_script.iss",
             "Remove-Item $dir\\unpack.log"
         ]
     },
