@@ -4,13 +4,13 @@ on:
 name: Excavator
 jobs:
   excavate:
-    name: Excavate
+    name: Excavator
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Excavate
       uses: Ash258/Scoop-GithubActions@stable
       env:
-        GITH_EMAIL: zhangyt2000@gmail.com
+        GITH_EMAIL: youremail@email.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
