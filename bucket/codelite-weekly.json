@@ -1,5 +1,5 @@
 {
-    "version": "13.0.8",
+    "version": "14.0.0",
     "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
     "homepage": "https://codelite.org/",
     "license": {
@@ -17,15 +17,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64",
-            "hash": "e9b4907e643611e2dbdb1b2de6edf2b42b39de6fd6158416225b79a5cafaf026"
+            "url": "https://downloads.codelite.org/codelite/14.0.0/codelite-amd64-14.0.0.exe",
+            "hash": "7a5a72fa48d54466ddf2ea60a84463c41703794051ab2dcc12e9c98f7c5d4750"
         },
         "32bit": {
-            "url": "https://downloads.codelite.org/downloads.php?windows_weekly",
-            "hash": "f24cbb9638b3cc81d34bc6966310647d0772db38e3c259a25569dea62f3a4ab0"
+            "url": "https://downloads.codelite.org/codelite/14.0.0/codelite-i686-14.0.0.exe",
+            "hash": "72d3da823107a4c776509c6830414564f7c1ae8d40885fa44678b3a8663f25e4"
         }
     },
-    "pre_install": "Rename-Item -Path $dir\\downloads.php -NewName $dir\\codelite-installer.exe",
+    "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\codelite-installer.exe\"",
     "installer": {
         "script": [
             "innounp -x -d\"$dir\" $dir\\codelite-installer.exe > $dir\\unpack.log",
@@ -45,16 +45,16 @@
         ]
     ],
     "checkver": {
-        "url": "https://downloads.codelite.org/",
-        "regex": "CodeLite ([\\d+\\.\\d+\\.\\d+]+)"
+        "url": "https://downloads.codelite.org/ReleaseArchive.php",
+        "regex": "CodeLite Version: ([\\d+\\.\\d+\\.\\d+]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.codelite.org/downloads.php?windows_weekly_64"
+                "url": "https://downloads.codelite.org/codelite/$version/codelite-amd64-$version.exe"
             },
             "32bit": {
-                "url": "https://downloads.codelite.org/downloads.php?windows_weekly"
+                "url": "https://downloads.codelite.org/codelite/$version/codelite-i686-$version.exe"
             }
         }
     }
