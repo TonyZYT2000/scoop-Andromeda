@@ -1,14 +1,12 @@
 {
-    "version": "14.0.0",
+    "version": "14.0.1",
     "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
     "homepage": "https://codelite.org/",
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/eranif/codelite/blob/master/LICENSE"
     },
-    "notes": [
-        "Reccomend to install gcc or llvm to compile C/C++ code."
-    ],
+    "notes": "Reccomend to install gcc or llvm to compile C/C++ code.",
     "depends": "innounp",
     "suggest": {
         "gcc": "gcc",
@@ -16,12 +14,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.codelite.org/codelite/14.0.0/codelite-amd64-14.0.0.exe",
-            "hash": "7a5a72fa48d54466ddf2ea60a84463c41703794051ab2dcc12e9c98f7c5d4750"
+            "url": "https://downloads.codelite.org/codelite/14.0.1/codelite-amd64-14.0.1.exe",
+            "hash": "fee4870baa1b7d0987a89e3ed06aab8f01440e23d4fd18fd8d482b312ca7d50a"
         },
         "32bit": {
-            "url": "https://downloads.codelite.org/codelite/14.0.0/codelite-i686-14.0.0.exe",
-            "hash": "72d3da823107a4c776509c6830414564f7c1ae8d40885fa44678b3a8663f25e4"
+            "url": "https://downloads.codelite.org/codelite/14.0.1/codelite-i686-14.0.1.exe",
+            "hash": "dd9723cd3e9cf3a57facddd45d1485144c322382605d095b8001010b8a5d1b65"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\codelite-installer.exe\"",
