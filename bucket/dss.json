@@ -1,5 +1,5 @@
 {
-    "version": "4.2.3",
+    "version": "4.2.5",
     "description": "DeepSkyStacker is a freeware for astrophotographers that simplifies all the pre-processing steps of deep sky pictures.",
     "homepage": "http://deepskystacker.free.fr/english/index.html",
     "license": {
@@ -9,15 +9,15 @@
     "depends": "7zip",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.3-Release/DSS-4.2.3-Setup64.exe",
-            "hash": "FBECEDA79A599DE79FE461B7B586A8D619B8769748B2A402208374ED817C4B76"
+            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.5/DSS-4.2.5-Setup64.exe",
+            "hash": "5fe0bc48742427847b8d2dc6ea623927e0863f89519c877c92207fec5b9c7ecc"
         },
         "32bit": {
-            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.3-Release/DSS-4.2.3-Setup32.exe",
-            "hash": "FE4C63DCCE35633D007538E999983A6C208E65EA1D194887D5CD72FC3947F159"
+            "url": "https://github.com/deepskystacker/DSS/releases/download/4.2.5/DSS-4.2.5-Setup32.exe",
+            "hash": "b5bc236f8aff6ea9775a29e731e48a55d4af12f59446ab60475f87079ba536ea"
         }
     },
-    "pre_install":"Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\dss-installer.exe\"",
+    "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\dss-installer.exe\"",
     "installer": {
         "script": [
             "Set-Location $dir",
@@ -41,12 +41,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/deepskystacker/DSS/releases/download/$version-Release/DSS-$version-Setup64.exe"
+                "url": "https://github.com/deepskystacker/DSS/releases/download/$version/DSS-$version-Setup64.exe"
             },
             "32bit": {
-                "url": "https://github.com/deepskystacker/DSS/releases/download/$version-Release/DSS-$version-Setup32.exe"
+                "url": "https://github.com/deepskystacker/DSS/releases/download/$version/DSS-$version-Setup32.exe"
             }
         }
     }
 }
-
