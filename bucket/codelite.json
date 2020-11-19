@@ -6,7 +6,7 @@
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/eranif/codelite/blob/master/LICENSE"
     },
-    "notes": "Reccomend to install gcc or llvm to compile C/C++ code.",
+    "notes": "Recommend to install gcc or llvm to compile C/C++ code.",
     "depends": "innounp",
     "suggest": {
         "gcc": "gcc",
