@@ -51,4 +51,14 @@
             "open": true,
         },
     ],
+    "cSpell.words": [
+        "Stellarium",
+        "astrophotographers",
+        "autoupdate",
+        "checkver",
+        "codelite",
+        "innounp",
+        "llvm",
+        "siril"
+    ],
 }
