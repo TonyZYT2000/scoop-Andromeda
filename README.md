@@ -7,10 +7,11 @@
 | Software              | Description                           | Installation               |
 | --------------------- | ------------------------------------- | -------------------------- |
 | CodeLite              | Fast and light C/C++ IDE.             | `scoop install codelite`   |
-| Stellarium            | Powerful and beautiful sky simulator. | `scoop install stellarium` |
-| Siril                 | Astrophotographing processing tool.   | `scoop install siril`      |
 | Deep Sky Stacker      | Astrophotographing stacking tool.     | `scoop install dss`        |
 | Fritz Chess Benchmark | CPU benchmark tool.                   | `scoop install fritzchess` |
+| Gmsh                  | A powerful mesh processing tool.      | `scoop install gmsh`       |
+| Siril                 | Astrophotographing processing tool.   | `scoop install siril`      |
+| Stellarium            | Powerful and beautiful sky simulator. | `scoop install stellarium` |
 
 ## Installation
 
