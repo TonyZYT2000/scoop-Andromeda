@@ -1,5 +1,5 @@
 {
-    "version": "15.0.2",
+    "version": "15.0.3",
     "description": "CodeLite is an open source, free, cross platform IDE specialized in C, C++, PHP and JavaScript (mainly for backend developers using Node.js) programming languages which runs best on all major Platforms ( OSX, Windows and Linux )",
     "homepage": "https://codelite.org/",
     "license": {
@@ -14,12 +14,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.codelite.org/codelite/15.0.2/codelite-amd64-15.0.2.exe",
-            "hash": "2CA6CBB0243D0518E4B094E94A288A34EA1074988ADE3CAD9FC983FBEDC7C7DC"
+            "url": "https://downloads.codelite.org/codelite/15.0.3/codelite-amd64-15.0.3.exe",
+            "hash": "db495a9d03bb2200a362f03806635890cd9cd21c4333ef177a1c1e70be64d615"
         },
         "32bit": {
-            "url": "https://downloads.codelite.org/codelite/15.0.2/codelite-i686-15.0.2.exe",
-            "hash": "3BA3D156D98BE16C7234D209CE2273588C03D8D7423A81E3873321E0CE03BC1E"
+            "url": "https://downloads.codelite.org/codelite/15.0.3/codelite-i686-15.0.3.exe",
+            "hash": "8ee195d86bf873f6de41805bbf7e5cf8558f42acb2c00a35dbcf14c80db762b2"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\codelite-installer.exe\"",
