@@ -12,6 +12,7 @@
 | Gmsh                  | A powerful mesh processing tool.      | `scoop install gmsh`       |
 | Siril                 | Astrophotographing processing tool.   | `scoop install siril`      |
 | Stellarium            | Powerful and beautiful sky simulator. | `scoop install stellarium` |
+| MonikAI               | Monika from DDLC                      | `scoop install monikai`    |
 
 ## Installation
 
