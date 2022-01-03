@@ -1,21 +1,13 @@
 {
-    "version": "4.8.4",
+    "version": "4.9.2",
     "description": "A three-dimensional finite element mesh generator with built-in pre- and post-processing facilities",
     "homepage": "https://gmsh.info/",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://gmsh.info/LICENSE.txt"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://gmsh.info/bin/Windows/gmsh-4.8.4-Windows64.zip",
-            "hash": "056c70b454e51f9b42564e92f2031192b06bf206b1f0101485758fb5f00e910b"
-        },
-        "32bit": {
-            "url": "https://gmsh.info/bin/Windows/gmsh-4.8.4-Windows32.zip",
-            "hash": "73832da8175b2540bc47700314d16f02d9a43a426c63acb14e95f57789cf93aa"
-        }
-    },
+    "url": "https://gmsh.info/bin/Windows/gmsh-4.9.2-Windows64.zip",
+    "hash": "b293b0a5a8ce10d28e16073c41954fb6ca8ce06e3368c8be5a53d8278dc598a5",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\gmsh\"",
@@ -35,13 +27,6 @@
         "regex": "version ([\\d+\\.\\d+\\.\\d+]+)"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://gmsh.info/bin/Windows/gmsh-$version-Windows64.zip"
-            },
-            "32bit": {
-                "url": "https://gmsh.info/bin/Windows/gmsh-$version-Windows32.zip"
-            }
-        }
+        "url": "https://gmsh.info/bin/Windows/gmsh-$version-Windows64.zip"
     }
 }
