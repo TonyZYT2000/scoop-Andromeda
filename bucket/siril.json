@@ -1,13 +1,13 @@
 {
-    "version": "1.0.0-rc2",
+    "version": "1.0.2",
     "description": "A free astronomical image processing software",
     "homepage": "https://siril.org/",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://gitlab.com/free-astro/siril/-/blob/master/LICENSE.md"
     },
-    "url": "https://free-astro.org/download/siril-1.0.0-rc2-setup.exe",
-    "hash": "84a892198531444bb2880f77a19a64d8e399c6df61733758bfea69de38076ff8",
+    "url": "https://free-astro.org/download/siril-1.0.2-setup.exe",
+    "hash": "700cf8256bfc6f9b279360e718a1a4c5c7173449eab8a5929caf09870745b614",
     "pre_install": "Get-ChildItem \"$dir\" | Rename-Item -NewName \"$dir\\siril-installer.exe\"",
     "installer": {
         "script": [
