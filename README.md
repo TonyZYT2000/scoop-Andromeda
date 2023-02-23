@@ -4,13 +4,14 @@
 
 - This is a bucket containing softwares I like.
 
-| Software              | Description                           | Installation               |
-| --------------------- | ------------------------------------- | -------------------------- |
-| CodeLite              | Fast and light C/C++ IDE.             | `scoop install codelite`   |
-| Deep Sky Stacker      | Astrophotographing stacking tool.     | `scoop install dss`        |
-| Fritz Chess Benchmark | CPU benchmark tool.                   | `scoop install fritzchess` |
-| Siril                 | Astrophotographing processing tool.   | `scoop install siril`      |
-| MonikAI               | Monika from DDLC                      | `scoop install monikai`    |
+| Software              | Description                         | Installation               |
+| --------------------- | ----------------------------------- | -------------------------- |
+| CodeLite              | Fast and light C/C++ IDE.           | `scoop install codelite`   |
+| Deep Sky Stacker      | Astrophotographing stacking tool.   | `scoop install dss`        |
+| Fritz Chess Benchmark | CPU benchmark tool.                 | `scoop install fritzchess` |
+| Siril                 | Astrophotographing processing tool. | `scoop install siril`      |
+| MonikAI               | Monika from DDLC                    | `scoop install monikai`    |
+| tev                   | EXR image viewer                    | `scoop install tev`        |
 
 ## Installation
 
